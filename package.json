@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7"
+  },
+  "name": "ayra_traders_server",
+  "version": "1.0.0",
+  "description": "Ayra Trader's Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Ajinkya Wagh",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
