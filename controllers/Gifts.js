@@ -71,7 +71,7 @@ exports.deleteGift = (req, res, next) => {
 
     db.query(DEL_QUERY, (err, result) => {
         if (err) throw err;
-        res.end("gift deleted:");
+        res.end("gift deleted");
     });
 };
 
