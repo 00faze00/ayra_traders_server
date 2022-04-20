@@ -7,18 +7,17 @@ const app = express();
 
 const bodyParser = require('body-parser');
 
+const giftRoute = require('./routes/Gifts');
+const customerRoute = require('./routes/Customers');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); 
 app.use('/assets/gifts/img', express.static(path.join(__dirname, '/assets/gifts/img')));
 
 
 
-const giftRoute = require('./routes/Gifts');
 
 app.use(giftRoute);
-
-const customerRoute = require('./routes/Customers');
-
 app.use(customerRoute);
 
 app.listen(process.env.PORT, () => {
